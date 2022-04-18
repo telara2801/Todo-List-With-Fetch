@@ -10,3 +10,291 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+/* 
+
+    You can write your own styles here...
+    
+    
+    ...Or you can use the import command to include 
+    other sylesheets into your bunde as well, e.j:
+    
+    import 'relative/path/to/stylesheet.scss';
+
+*/
+
+  
+body {
+    background-color: #dedede;
+    /*background-color: #ffffff;*/
+    font-family: 'Times New Roman', sans-serif;
+    font-size:    23px;
+    /*color:        #fc0808;*/
+}
+
+.body1 {
+  background-color: #f5f5f5;
+  width: 600px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+.list {
+  color: #555;
+  font-size: 22px;
+  padding: 0 !important;
+  width: 500px;
+  /*font-family: courier, monospace;*/
+  border: 1px solid #dedede;
+}
+
+.list li {
+  list-style: none;
+  border-bottom: 1px dotted #ccc;
+  text-indent: 25px;
+  height: auto;
+  padding: 10px;
+  /*text-transform: capitalize;*/
+}
+
+.lines {
+  border-left: 1px solid #ffaa9f;
+  border-right: 1px solid #ffaa9f;
+  width: 2px;
+  float: left;
+  height: 495px;
+  margin-left: 40px;
+}
+
+.card1,card-1{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 
+  2px 10px 0 rgba(0,0,0,0.12)}
+
+.paper {
+    background: #fff;
+    box-shadow:
+      0 1px 1px rgba(0,0,0,0.15),
+      0 10px 0 -5px #eee,
+      0 10px 1px -4px rgba(0,0,0,0.15),
+      0 20px 0 -10px #eee,
+      0 20px 1px -9px rgba(0,0,0,0.15);
+      margin-left: 190px;
+    }
+  
+/*
+  @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+  body {
+    font-family: 'Josefin Sans', cursive;
+  }
+*/
+/*
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Rajdhani:wght@300&family=Shadows+Into+Light&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+Body{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Titillium Web', sans-serif;
+  font-size:    23px;
+  color:        #e2dddd;
+}
+
+*/
+
+
+
+
+
+ 
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&family=Shadows+Into+Light&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+Body{
+  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Titillium Web', sans-serif;
+  font-family: "Times New Roman", Times, serif;
+  font-size:    23px;
+  color:        #f30606;
+
+}
+
+.flex-container {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; 
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; 
+  align-items:center;
+  /*vertical-align: middle;*/
+}
+
+h1 {
+  color: #e2dddd;
+  text-align: center;
+  font-size: 60px;
+ 
+  }
+
+  .div2 {
+    width: 900px;
+    height: auto;
+    padding: 50px;
+    border: 1px solid rgb(243, 242, 242);
+  }
+
+  .text-span{
+    /*color: #e2dddd;*/
+    color:#e2dddd;
+    font-size: 16px;
+  }
+
+.mainBox {
+  display: flex;
+  height: 660px;
+  width: 900px;
+  background-color: #ece8e8;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; 
+  align-items:center;
+  vertical-align: middle;
+  margin: 2rem 3rem 3rem 26rem;
+}
+.mainBox1 {
+  display: flex;
+  height: 750px;
+  width: 900px;
+  background-color: #ece8e8;
+  flex-direction: column;
+  justify-content: center;
+  /*align-content: center; 
+  align-items:center;
+  vertical-align: middle;*/
+  margin: 2rem 3rem 3rem 26rem;
+}
+
+.box1 {
+  height: 790px;
+  width: 900px;
+  background-color: #ebe7e7;
+  margin: 2rem 3rem 3rem 26rem;
+}
+
+
+.caja{
+  color: #555;
+  padding: 0 !important;
+  width: 500px;
+/*font-family: courier, monospace;*/
+  border: 1px solid #dedede;
+  box-shadow: 230px -5px 90px 2px #8b8585
+
+  /*box-shadow: 10px 10px 5px #aaaaaa;#8b8585 */
+}
+
+
+.textTodos {
+      font-size: 90px;
+      font-family: "Times New Roman", Times, serif;
+      color: #f60707;
+      /*color: #ece8e8;*/
+      text-align: center;
+      
+    }  
+
+.mainInput{
+      margin: 0;
+      border: none;
+      border-radius: 0;
+      width: 75%;
+      padding: 10px;
+      float: left;
+      font-size: 16px;
+    }
+
+      
+input{
+      margin: 0;
+      border: none;
+      border-color: transparent;
+      -webkit-appearance: none;
+      border-width:0px;
+      /*border-radius:4px;*/
+      width:500px;;
+     /* padding: 0 !important;
+      float: left;*/
+      font-size: 22px;
+      /*color: #555;*/
+      /*border: 1px solid #dedede;*/
+      text-indent: 66px;
+      height: 50px;
+      /*border: 0px solid #dedede;*/
+      border-top-style: hidden;
+      border-right-style: hidden;
+      border-left-style: hidden;
+      border-bottom-style: groove;
+    }
+ input:focus {outline:none!important;}
+ input{
+  border: 0;
+  outline: none;
+
+}
+    *#foo {
+      color: #a4a4a4;
+    }
+    *[id="foo"] {
+      color: rgb(4, 4, 4);
+    }
+
+    /*
+input {
+      border-top-style: hidden;
+      border-right-style: hidden;
+      border-left-style: hidden;
+      border-bottom-style: groove;
+      /*background-color: #eee;
+      background-color: rgb(221, 42, 42);
+    }
+    
+   */
+span{
+    /*visibility: visible;*/
+    display:none;
+    font-size: 30px;
+    color: #250404;
+   }
+ 
+
+
+.hide{
+  display:none;
+}
+
+.ListItems:hover  + .hide{
+ visibility: visible;
+   display: block;
+   color: rgb(161, 49, 12); 
+   visibility: visible;
+}
+
+.hide1 {
+  display: none;
+  /*display: none;*/
+}
+ 
+.myDIV:hover + .hide1 {
+  display: block;
+   color: rgb(46, 13, 228);
+ 
+}
+
+/*aquiiiiiiiiiiiiiiii*/
+.ListItems:hover  span {
+  display: block;
+   color: rgb(218, 32, 32);
+ 
+}
+
