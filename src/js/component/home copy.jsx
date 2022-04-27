@@ -8,6 +8,12 @@ import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
 const Home = () => {
+	// let todos = [
+	// 	//{ label: "This is one local activity", done: false },
+	// 	// { label: "Clean the room", done: false },
+	// 	// { label: "car Wash", done: false },
+	// ];
+
 	const [ListItems, setListItems] = useState([]);
 	const [newTask, setnewTask] = useState("");
 	let url = `http://assets.breatheco.de/apis/fake/todos/user/TULIO-LARA "`;
@@ -36,17 +42,11 @@ const Home = () => {
 		setListItems(data);
 		console.log(data);
 	};
-
 	const CreateListitems = async () => {
 		const response = await fetch(url, optionsPostAll);
-		const body = await response.json();
-		if (!response.ok) {
-			alert(`HA ocurrido un error ${response.status}: ${body.msg}`);
-		}
-		GetAllToDos();
 	};
-
 	const DeleteAll = async () => {
+		// const response = fetch(url, optionsDeleteAll);
 		const response = await fetch(url, optionsDeleteAll);
 		const data = await response.json();
 		if (!response.ok) {
@@ -54,9 +54,30 @@ const Home = () => {
 			CreateListitems();
 			return;
 		}
-		setListItems([]);
-		GetAllToDos();
+		setListItems(data);
+
 		// console.log(data)
+		// fetch(url, optionsDeleteAll)
+		// 	.then((respuesta) => {
+		// 		if (respuesta.status >= 200 && respuesta.status < 300) {
+		// 			console.log("el update se realizo satisfactoriamente");
+		// 			return respuesta.json();
+		// 		} else {
+		// 			console.log(
+		// 				`Hubo un error ${respuesta.status} en el request`
+		// 			);
+		// 		}
+		// 	})
+		// 	.then((data) => {
+		// 		const newListItems = data.map(() =>
+		// 			newListItems.push(data.label)
+		// 		);
+		// 		console.log(JSON.stringify(newListItems));
+		// 	})
+		// 	.catch((error) => console.error("Error:", error));
+
+		// const newListItems = response;
+		// setListItems(newListItems);
 		return;
 	};
 
@@ -65,21 +86,17 @@ const Home = () => {
 	}, []);
 
 	return (
-		<div className="container-fluid bground vh-100">
+		<div className="container-fluid text-center bground vh-100">
 			{/* <h1 className="text-center mt-5 fw-lighter">Hello Rigo!</h1> */}
-			<h1 className=" d-flex justify-content-center pt-3 fw-lighter  ">
-				todos
-			</h1>
-			<div className="d-flex justify-content-center center caja    ">
+			<h1 className="text-center pt-3 fw-lighter  ">todos</h1>
+			<div className="d-flex justify-content-center  caja    ">
 				<div className="paper list text-muted">
 					<div className="d-grid gap-2 d-md-flex justify-content-md-end">
 						<div className="container d-flex justify-content-end">
 							<button
 								type="button"
 								className="btn btn-danger"
-								onClick={(e) => {
-									DeleteAll();
-								}}>
+								onClick={DeleteAll}>
 								Delete all
 							</button>
 						</div>
